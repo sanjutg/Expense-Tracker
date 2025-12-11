@@ -12,7 +12,7 @@ mongoose
   .catch((err) => {
     console.log("MongoDB not connected 🥀", err);
   });
-
+// this is called as schema (❁´◡`❁)    ༼ つ ◕_◕ ༽つ
 const ExpenseSchema = new mongoose.Schema({
   email: {
     type: String,
@@ -43,8 +43,7 @@ app.post("/signup", async (req, res) => {
       address,
     });
 
-    await userData.save(); 
-
+    await userData.save();
     res.send("User signed up successfully!");
   } catch (err) {
     console.log(err);
@@ -52,6 +51,17 @@ app.post("/signup", async (req, res) => {
   }
 });
 
+app.get("/users", async (req, res) => {
+  try {
+    const users = await Expense.find();
+    res.send(users);
+  } catch (error) {
+    console.log(error);
+    res.status(500).send("Error fetching users");
+  }
+});
+
+
 app.listen(5000, () => {
-  console.log("Server running on http://localhost:5000 🚀");
+  console.log("Server running on port 5000");
 });
