@@ -1,0 +1,108 @@
+.expense-container {
+  max-width: 550px;
+  max-height: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.expense-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.expense-form input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.expense-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #7b5cf5;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.expense-form button:hover {
+  background-color: #6848db;
+}
+
+.expense-list {
+  margin-top: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.expense-item {
+  padding: 10px;
+  margin-bottom: 8px;
+  background: #f6f6ff;
+  border-left: 4px solid #7b5cf5;
+  border-radius: 6px;
+}
+.expense{
+  border: 3px  solid red;
+  background-color: #f16e6e;
+}
+.income{
+  border: 3px solid rgb(7, 82, 7);
+  background-color: #87e18b;
+}
+/* From Uiverse.io by ErzenXz */ 
+button {
+  width: fit-content;
+  min-width: 100px;
+  height: 45px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 2.5px solid #E0E1E4;
+  box-shadow: 0px 0px 20px -20px;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.2s ease-in-out 0ms;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+  background-color: #F2F2F2;
+  box-shadow: 0px 0px 20px -18px;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+.balance-container {
+  display: flex;
+  justify-content: space-between; /* space evenly */
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+.balance-box {
+
+  padding: 15px;
+  width: 30%;              /* 3 boxes in 1 row */
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+.balance-con{
+  background-color: #f1f1af;
+  border:3px solid #aaaa0c;
+}
