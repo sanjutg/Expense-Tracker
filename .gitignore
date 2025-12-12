@@ -12,7 +12,6 @@ node_modules/
 dist/
 dist-ssr/
 *.local
-server.js   # lowercase
 Server.js   # optional, in case of uppercase
 
 # Editor files
