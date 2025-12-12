@@ -73,7 +73,7 @@ function ExpenseContainer() {
   const [amount, setAmount] = useState(""); 
   const [history, setHistory] = useState([]); 
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     if (!title || !amount) return; 
 
@@ -85,6 +85,13 @@ function ExpenseContainer() {
     setHistory([...history, newExpense]);
     setTitle("");
     setAmount("");
+
+    await fetch("http://localhost:5000/add-expense", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(newExpense)
+});
+
   }
 
   return (
