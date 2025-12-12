@@ -85,7 +85,7 @@ app.get("/expenses", async (req, res) => {
     const data = await Expense.find();
     res.send(data);
   } catch (err) {
-    res.status(500).send({ message: "Error fetching expenses ❌" });
+    res.send({ message: "Error fetching expenses ❌" });
   }
 });
 app.listen(5000, () => {
