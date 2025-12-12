@@ -12,7 +12,7 @@ node_modules/
 dist/
 dist-ssr/
 *.local
-Server.js   # optional, in case of uppercase
+Backend/Server.js   # optional, in case of uppercase
 
 # Editor files
 .vscode/*
